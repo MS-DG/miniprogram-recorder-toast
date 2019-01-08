@@ -1,0 +1,21 @@
+<view class="Recording" hidden="{{hidden}}">
+  <view class="Recording-content">
+    <view class="Recording-contentIcon {{countdownNum>=0 ? '' : cancel? 'Icon-cancel': 'Icon-recording'}}">
+      {{countdownNum<0 ? '' : countdownNum}}
+    </view>
+    <view class="Recording-contentSpeech" hidden="{{cancel||(countdownNum>=0)}}">
+      <view class="speaker_wrapper">
+        <view class="speaker1" />
+        <view class="speaker2" />
+        <view class="speaker3" />
+        <view class="speaker4" />
+        <view class="speaker5" />
+        <view class="speaker6" />
+        <view class="speaker7" />
+        <view class="speaker8" />
+        <view class="speaker9" />
+      </view>
+    </view>
+  </view>
+  <view class="Recording-title {{cancel?'Recording-title_red':''}}">{{title}}</view>
+</view>

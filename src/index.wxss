@@ -1,0 +1,175 @@
+.Recording {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5000;
+    width: 120px;
+    height: 120px;
+    top: 230px;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    background: rgba(40, 40, 40, 0.75);
+    border-radius: 5px;
+    color: #fff;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    justify-content: space-around;
+}
+
+.Recording-content {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Recording-contentIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    font-size: 100rpx;
+    font-weight: blod;
+    text-align: center;
+}
+
+.Icon-recording {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='55' height='91' xmlns='http://www.w3.org/2000/svg'%3e%3cg transform='translate(.3)' fill='%23FFF' fill-rule='evenodd' opacity='.8'%3e%3cpath d='M28.7 79.044V86.8h14.7a1.4 1.4 0 0 1 1.4 1.4v1.4a1.4 1.4 0 0 1-1.4 1.4H9.8a1.4 1.4 0 0 1-1.4-1.4v-1.4a1.4 1.4 0 0 1 1.4-1.4h14.7v-7.81C11.505 77.82 1.17 67.424.093 54.402A1.397 1.397 0 0 1 0 53.9V43.4A1.4 1.4 0 0 1 1.4 42h1.4a1.4 1.4 0 0 1 1.4 1.4v10.5h.066c.894 11.747 10.708 21 22.684 21 10.873 0 19.965-7.628 22.215-17.825.229-1.033.386-2.094.469-3.175h.066V43.4a1.4 1.4 0 0 1 1.4-1.4h1.4a1.4 1.4 0 0 1 1.4 1.4v10.5c0 .177-.033.346-.093.502C52.711 67.657 42.022 78.19 28.7 79.044z'/%3e%3crect x='9.1' width='35' height='69.3' rx='17.5'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.Icon-cancel {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='80' height='103' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M70 32h-.021C69.455 19.761 59.367 10 47 10c-12.367 0-22.455 9.761-22.979 22H24v46h14l-19 22L0 78h14V32h.015C14.544 14.237 29.109 0 47 0c17.89 0 32.456 14.237 32.985 32H80v69.004A1.993 1.993 0 0 1 78 103h-6c-1.105 0-2-.888-2-1.996V32z' fill='%23FFF' fill-rule='evenodd' opacity='.8'/%3e%3c/svg%3e");
+}
+
+.Recording-title {
+    font-size: 12px;
+    margin-top: -12px;
+    padding: 4rpx;
+}
+
+.Recording-title_red {
+    background: #a52e2c;
+}
+
+/*voice loading*/
+
+.Recording-contentSpeech {
+    width: 38rpx;
+    height: 10rpx;
+    -webkit-animation-name: skyset;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+    position: relative;
+    overflow: hidden;
+}
+
+@-webkit-keyframes skyset {
+    0% {
+        height: 10rpx;
+    }
+    10% {
+        height: 20rpx;
+    }
+    20% {
+        height: 30rpx;
+    }
+    30% {
+        height: 40rpx;
+    }
+    40% {
+        height: 50rpx;
+    }
+    50% {
+        height: 60rpx;
+    }
+    60% {
+        height: 70rpx;
+    }
+    70% {
+        height: 90rpx;
+    }
+    80% {
+        height: 90rpx;
+    }
+    90% {
+        height: 100rpx;
+    }
+}
+
+.speaker_wrapper {
+    margin: 0 0 14rpx -10rpx;
+}
+
+.speaker1,
+.speaker2,
+.speaker3,
+.speaker4,
+.speaker5,
+.speaker6,
+.speaker7,
+.speaker8,
+.speaker9 {
+    height: 0;
+    border-top: 6rpx solid rgba(255, 255, 255, 0.8);
+    border-right: 2rpx solid transparent;
+    margin-bottom: 2px;
+    animation-duration: 5s;
+    position: absolute;
+}
+
+.speaker1 {
+    width: 38rpx;
+    bottom: 90rpx;
+}
+
+.speaker2 {
+    width: 36rpx;
+    bottom: 80rpx;
+}
+
+.speaker3 {
+    width: 34rpx;
+    bottom: 70rpx;
+}
+
+.speaker4 {
+    width: 32rpx;
+    bottom: 60rpx;
+}
+
+.speaker5 {
+    width: 30rpx;
+    bottom: 50rpx;
+}
+
+.speaker6 {
+    width: 28rpx;
+    bottom: 40rpx;
+}
+
+.speaker7 {
+    width: 26rpx;
+    bottom: 30rpx;
+}
+
+.speaker8 {
+    width: 24rpx;
+    bottom: 20rpx;
+}
+
+.speaker9 {
+    width: 22rpx;
+    bottom: 10rpx;
+}
+
+.Recording-Countdown {
+    font-size: 100rpx;
+    font-weight: blod;
+}

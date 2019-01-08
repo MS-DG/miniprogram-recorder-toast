@@ -1,0 +1,19 @@
+{
+  "name": "miniprogram-recorder-toast",
+  "version": "1.0.0",
+  "description": "miniprogram recorder-toast components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewFuture/miniprogram-recorder-toast.git"
+  },
+  "author": "New Future",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewFuture/miniprogram-recorder-toast/issues"
+  },
+  "homepage": "https://github.com/NewFuture/miniprogram-recorder-toast#readme"
+}
