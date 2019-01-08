@@ -1,8 +1,10 @@
 # miniprogram-recorder-toast
 miniprogram recorder-toast components
+
 ```
 npm i miniprogram-recorder-toast -S
 ```
+
 ```json
 {
   "usingComponents": {
@@ -13,7 +15,7 @@ npm i miniprogram-recorder-toast -S
 
 ```html
 <recoder-toast
-    src="高清大图.jpg"
+    title="正在录音"
     bind:end="onEnd"
     hidden="{{!show}}"
 />
@@ -21,9 +23,8 @@ npm i miniprogram-recorder-toast -S
 
 ```html
 <recoder-toast
-    src="高清大图.jpg"
+    title="{{title}}"
     bind:end="onEnd"
-    title=""
     cancel="{{bool}}"
     counter="{{10}}"
     duration="{{60}}"
