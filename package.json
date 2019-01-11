@@ -1,8 +1,9 @@
 {
   "name": "miniprogram-recorder-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "miniprogram recorder-toast components",
-  "main": "index.js",
+  "main": "miniprogram_dist/index.js",
+  "miniprogram": "miniprogram_dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:ts && npm run build:copy",
